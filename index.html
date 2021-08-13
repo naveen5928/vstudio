@@ -1,33 +1,80 @@
 <!Doctype html>
 <html>
     <title>
-        User Details
+        User Application Details
     </title>
     <head>
         <meta charset="UTF-8">
         <meta name="keywords" content="contact">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <!-- CSS style-->
+        <style>
+            
+        </style>
     </head>
     <body>
-        <div class= "container">
-        <h1 text-align ="center"> User details</h1>    
-        <form action = "#" >
-           <p text-align :center> please enter user infomation </p> 
-           <!--<label for= "F_name">First Name</label> -->
-           <div class = ".col-md-4" >
-            <input type = "text" id="F_name" placeholder = First_Name>
-            <input type = "text" id="M_name" placeholder = Middle_Name>
-            <input type = "text" id="L_name" placeholder = Last_Name>
-           </div><br>
-           <div> 
+        <div class= "mydiv">
+            <h1><b> User Application Details</b></h1>    
+            <form action = "#" class = "form-group">
+               <h3> please enter user infomation </h3> 
+               <!--input type for text box -->
+            <div>
                <div>
-                   </div>
-
-           </div>
-           <div><button type="submit" class="btn btn-success">Create Account</button></div>
-        </form>
+                <p>Enter your Name</p>
+                <input type = "text" id="F_name" placeholder = First_Name>
+                <input type = "text" id="M_name" placeholder = Middle_Name>
+                <input type = "text" id="L_name" placeholder = Last_Name>
+               </div>
+               <!--input type for radio buttons -->
+               <div>
+                <p>Select your Gender</p>
+                <input type = radio id= "Male" name = "Gender" value ="Male">
+                <label for="Male">Male</label>
+                <input type = radio id= "Female" name = "Gender" value ="Female">
+                <label for="Female">Female</label> 
+               <!-- input type for radio buttons-->
+                <p>Select your Age Group</p>
+                    <div class="row">
+                        <div class="col-xl-12"><input type = radio id= "agegroup1">
+                        <label for=agegroup1>0-5</label></div>
+                        <div class="col-xl-12"><input type= radio id= "agegroup2">
+                        <label for=agegroup2> 5-12</label></div>
+                        <div class="col-xl-12"><input type= radio id= "agegroup3">
+                        <label for=agegroup3> 12-18</label></div>
+                        <div class="col-xl-12"><input type= radio id= "agegroup4 ">
+                        <label for=agegroup4> 18-30</label></div>
+                        <div class="col-xl-12"><input type= radio id= "agegroup5">
+                        <label for=agegroup5> 30-60</label></div>
+                        <div class="col-xl-12"><input type= radio id= "agegroup6">
+                        <label for=agegroup> 60 and above</label></div>
+                    </div> 
+               </div>
+               <div><p>Select your vehicle Wheeler</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Two Wheeler</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Four Wheeler</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="BOTH">
+                <label for="vehicle3"> BOTH</label><br></div>
+               <!--input type color picker -->
+               <div> <label for="favcolor">Select your vehicle color:</label>
+                     <input type="color" id="vehiclecolor" name="vcolor" value="#ff0000"> </div>
+               <!--input type date -->
+               <div> <label for="DOB">Enter your DOB</label>
+                     <input type = "date" id = "DOB"></div>
+                <div><label for="email">Enter your Email_ID:</label>
+                     <input type="email" id="email" name="email"></div>
+                <div><label for="file">Upload a file less than 100kb</label>
+                     <input type="file" id="myfile" name="myfile" multiple></div>
+               <div> <button type="submit" class="btn btn-success">Submit</button> <input type="reset" class= "btn btn-warning" value="Reset"></div>
+            </div>
+            </form>
         </div>
+        
+        <!-- script  JQuery, js, bootsrap Js-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     </body>
 </html>
